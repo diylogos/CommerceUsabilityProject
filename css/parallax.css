@@ -20,7 +20,7 @@
 
 
 .scroll2 {
-    background:url(http://www.ssd.noaa.gov/goes/comp/ceus/wv-animated.gif);
+    background:url(../img/census.gif);
     
     /*Dont mind the rest*/
     position:relative;
@@ -31,7 +31,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-repeat: no-repeat;
-    opacity:0.8;
+    
     text-align:center;
     color:#fff;
     font-family:'Open Sans' sans-serif;
