@@ -1,0 +1,415 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MixItUp Basic Example</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+<link href="css/agency.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.js"></script>
+<script type="text/javascript">
+		
+			$(function(){
+  $('#Container2').mixItUp();
+});
+		</script>
+
+</head>
+
+<style>
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, button{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+.controls{
+  padding: 2%;
+  /*background: #333;*/
+  color: black;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: lightslategray;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #660000;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.containermix{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  /*background: #68b8c4;*/
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.containermix:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.containermix .mix,
+.containermix .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.containermix .mix{
+  text-align: left;
+  background: #03899c;
+  margin-bottom: 2%;
+  display: none;
+}
+
+.containermix .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+.containermix .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+.containermix .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.containermix .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+@media all and (min-width: 300px){
+  .containermix .mix,
+  .containermix .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 1000px){
+  .containermix .mix,
+  .containermix .gap{
+    width: 23.5%;
+  }
+}
+    
+    #btn {
+            background: #808080;
+            background-image: -webkit-linear-gradient(top, #808080, #4C4C4C);
+            background-image: -moz-linear-gradient(top, #808080, #4C4C4C);
+            background-image: -ms-linear-gradient(top, #808080, #4C4C4C);
+            background-image: -o-linear-gradient(top, #808080, #4C4C4C);
+            background-image: linear-gradient(to bottom, #808080, #4C4C4C);
+            -webkit-border-radius: 4;
+            -moz-border-radius: 4;
+            border-radius: 4px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+          }
+
+          #btn:hover {
+            background: #6387cf;
+            background-image: -webkit-linear-gradient(top, #6387cf, #3498db);
+            background-image: -moz-linear-gradient(top, #6387cf, #3498db);
+            background-image: -ms-linear-gradient(top, #6387cf, #3498db);
+            background-image: -o-linear-gradient(top, #6387cf, #3498db);
+            background-image: linear-gradient(to bottom, #6387cf, #3498db);
+            text-decoration: none;
+          }
+</style>
+<body>
+<div class="controls">
+  <label>Filter:</label>
+  
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter" data-filter=".category-1">WEATHER</button>
+  <button class="filter" data-filter=".category-2">CYBER</button>
+  <button class="filter" data-filter=".category-3">ECONOMY</button>
+
+</div>
+<div id="Container2" class="containermix">
+    <a href="#person1" class="portfolio-link" data-toggle="modal"><img src="../img/slides/slides.002.png"  class="mix category-1" data-myorder="1"></a>
+    <a href="#person2" class="portfolio-link" data-toggle="modal"><img src="../img/slides/slides.003.png"  class="mix category-1" data-myorder="2"></a>
+    <a href="#person3" class="portfolio-link" data-toggle="modal"><img src="../img/slides/slides.001.png"  class="mix category-2" data-myorder="3"></a>
+    <a href="#person4" class="portfolio-link" data-toggle="modal"><img src="../img/slides/slides.004.png"  class="mix category-3" data-myorder="4"></a>
+    
+
+</div>
+    
+   
+
+  <!-- Modal for each story  -->
+   
+    <!--  Person 1 -->
+    <div class="portfolio-modal modal fade" id="person1" tabindex="-1" role="dialog" aria-hidden="true" >
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="background-color:#E68A00;font-family:Helvetica">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            
+                            <img class="img-responsive img-centered" src="../img/slides/slides.002.png" alt="" width="300">
+                            <p style="font-size:120%; color:white;"><strong> Imagine baseball-sized ice balls falling from the sky. </strong><br>For some Americans, this is a real weather phenomenon that risks the physical well-being of people and property. But how often does it happen? Where do these events normally happen? <br>
+                                As it turns out, the National Oceanographic and Atmospheric Administration (NOAA) collects massive amounts of data on precipitation using radar stations across the country. <br><br>
+                            <a id="btn" style="text-align:center;font-size:105%" href="http://commercedataservice.github.io/tutorial_noaa_hail/" target="_top" >Get Started</a> </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--  Person 2 -->
+    <div class="portfolio-modal modal fade" id="person2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Person Name</h3>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="https://m2.behance.net/rendition/pm/8680925/disp/7a312d3181a5a4b2334089e3cea1708a.jpg" alt="">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--  Person 3 -->
+    <div class="portfolio-modal modal fade" id="person3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Person Name</h3>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="https://m2.behance.net/rendition/pm/8680925/disp/7a312d3181a5a4b2334089e3cea1708a.jpg" alt="">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+<!--  Person 4 -->
+    <div class="portfolio-modal modal fade" id="person4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Person Name</h3>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="https://m2.behance.net/rendition/pm/8680925/disp/7a312d3181a5a4b2334089e3cea1708a.jpg" alt="">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--  Person 5 -->
+    <div class="portfolio-modal modal fade" id="person5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Person Name</h3>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="https://m2.behance.net/rendition/pm/8680925/disp/7a312d3181a5a4b2334089e3cea1708a.jpg" alt="">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+<!--  Person 6 -->
+    <div class="portfolio-modal modal fade" id="person6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Person Name</h3>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="https://m2.behance.net/rendition/pm/8680925/disp/7a312d3181a5a4b2334089e3cea1708a.jpg" alt="">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--  Person 7 -->
+    <div class="portfolio-modal modal fade" id="person7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Person Name</h3>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="https://m2.behance.net/rendition/pm/8680925/disp/7a312d3181a5a4b2334089e3cea1708a.jpg" alt="">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--  Person 8 -->
+    <div class="portfolio-modal modal fade" id="person8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h3>Person Name</h3>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="https://m2.behance.net/rendition/pm/8680925/disp/7a312d3181a5a4b2334089e3cea1708a.jpg" alt="">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    
+<script src="js/agency.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    
+</html>

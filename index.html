@@ -1,326 +1,166 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="shortcut icon" href="https://www.commerce.gov/sites/all/themes/doc/doc_theme/favicon.ico" type="image/vnd.microsoft.icon" />
-    <title> Data Corps</title>
+    <title>Data @ Commerce</title>
+     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/b/bc/US-DeptOfCommerce-Seal.png">
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="css/animate.min.css" type="text/css">
         <link rel="stylesheet" href="css/creative.css" type="text/css">
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+    
+        <link rel="stylesheet" href="css/gallerymix.css" type="text/css">
         <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/parallax.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+              $('#Container2').mixItUp();
+            });
+		</script>
     </head>
     
     <style>
-   
+
         #banner{position:absolute; font-size:400%; top:50%; left:50%;z-index:9999;font-family:"Helvetica"}
-        #spanner{color: lightgrey;}
-        #thumbnail {width: 75px;}
-        #thumbnail2 {width: 120px;}
-        #cdcthumbnail{ width:400px;}
-        body.footie{font-family: "SourceSansProRegular","Helvetica Neue",Arial,Helvetica,sans-serif;}
-        
     </style>
+    
+    
 <body>
 
-    
-<!--Cover-->
+<!--NavBar-->
+     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"></a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#top">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#story">Visuals</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#action">About</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     
-    <section class="scroll backie datacorps ">
-        
-        <div class="header-content ">
+    
+<!--Issue-->
+    
+      <section class="scroll  datacorps backie1">
+        <div class="header-content " style="position: absolute; top:50%; left:55%">
             <div class="header-content-inner">
 
-                <h2 style="text-align:right; right:10%">
-                    <font color = "white" style>
-                        <span style="background-color: rgba(0, 0, 0, 0.85);font-size:200%;" ><strong>data science</strong> <br> @ commerce</span>
-                    </font>
-                </h2>
-                
-                <p style="text-align:right; width:100%;float:right;line-height:1"><span style="background-color: rgba(0, 0, 0, 0.6);color:white;font-size:130%; width: 100%;" > As America's Data Agency, <br><strong>the US Department of Commerce </strong>  chronicles <br> everything from the surface of the sun <br>to the depths of the oceans, from local<br> poverty to a region's economic might. </span><span style="background-color: rgba(0, 0, 0, 0.6);color:yellow;font-size:130%; width: 100%;"><br>Find how Commerce data can<br> be used for everyday <strong><br>data science.</strong></span></p>
+                <h2 style="text-align:center" ><font color = "white" style><span style="background-color: rgba(0, 0, 0, 0.6);font-size:200%;text-align:left;" >data @ commerce</span></font></h2>
+                  
+                <p style="text-align:left"><span style="background-color: rgba(0, 0, 0, 0.6);color:white;font-size:120% " >Get started with building products using <br> data from the US Department of Commerce</p>
+</span>
+            </div>
+        </div>
+    </section>
 
+        
+<!--Below-->
+    
+      <section class="scroll1 datacorps backie2">
+        <div class="header-content " style="position: absolute; top:45%; left:10%">
+            <div class="header-content-inner">
+                <p style="text-align:left;font-size:200%;text-shadow: 2px 2px 2px #00297A;">The U.S. Department of Commerce's <br> 12 Bureaus collect data <br> on virtually every aspect of American life. <br><strong> And it's free and open.</strong></p>
+            </div>
+        </div>
+    </section>
+
+        
+<!--Second to last-->
+    
+      <section class="scroll2 datacorps backie3">
+        <div class="header-content " style="position: absolute; top:45%; left:40%">
+            <div class="header-content-inner">
+                <p style="text-align:left;font-size:200%;text-shadow: 2px 2px 2px #00297A;">Explore the Commerce data <br> through tutorials and visualizations <br> and get started with using it.</strong></p>
             </div>
         </div>
     </section>
 
 
     
-<!--Explanation-->
+<!--Visuals-->
+     <section class="bg-primary " style=";text-align:left; padding-left:50px;background-color:white;color:red" id="story">
+           <h2 style="text-align:center" ><font color = "white" style><span style="background-color: rgba(0, 0, 0, 0.6);font-size:150%;text-align:left;" >get started</span></font></h2>
+    </section>
     
-       <section class="bg-primary datacorps backie2 scroll2 " style=";text-align:left; ">
-        <div class="container">
+    <iframe src="mixitup/index.html" marginwidth="0" frameborder = "0"  marginheight="0" scrolling="no" width="100%" height="600px"></iframe>
+      
+
+    
+ <!--Action-->
+    
+       <section class="datacorps   " style=";text-align:left;" id="action">
+         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1">
-                    <h2 class="section-heading" style="left:10%; opacity:0.6;background-color:black;color:yellow"><strong>100,000</strong> possible data projects </h2>
-                    <hr class="light">
-                    <p  style="text-align:left; background-color:black;opacity:0.6;color:white;font-size:125%">There are over 100,000 datasets in the U.S. Department of Commerce. Imagine what you can learn from it -- the digital storytelling, predictive models, visualizations, fodder for decision making. 
-                        <br><br>
-                        <strong>The data are vast, signal-rich, and mashable. </strong>
+                <div class="col-lg-12 col-md-6 text-center">
+                       <h2 style="text-align:center" ><font color = "white" style><span style="background-color: rgba(0, 0, 0, 0.6);font-size:150%;text-align:left;" >Commerce Data Service</span></font></h2>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                    <p  style="text-align:center;font-size:125%"> The Commerce Data Service is committed to making data <br>
+                        more accessible, not only through discoverability <br> but also lowering the knowledge barrier to getting started.
+                        <br> <br> Have an idea for a visualization and data tutorial? <br>Send an email to:
+                        <br> <br>
+                        
+                        <a style="text-align:center;font-size:155%" href="mailto:data@doc.gov" target="_top" ><strong>data@doc.gov</strong></a>
                     </p>
                 
-
-                </div>
             </div>
         </div>
-    </section>
-
-
-    
-    <!--3 cases viz-->
-   <section class="no-padding" id="portfolio2" style="background-color:#999999;color:white;">
-           <div class="container" >
-            <div class="row">
-                <div class="col-lg-12 col-md-6 text-center">
-                    <h2 class="section-heading" ><strong></strong></h2>
-                    
-                </div>
-            </div>
-           </div>
-    </section>
-    <section id="services" class=" datacorps">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-6 text-center">
-                    <h2 class="section-heading"><strong>simple insight</strong></h2>
-                    <hr class="primary">
-                    <p><span style="font-size:120% " > One dataset can easily be turned into a large number of data products.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-center boxer">
-                    <div class="service-box">
-                        <a href="http://www.census.gov"><img alt="CENSUS" id="thumbnail"  height="70px" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/census_red194.jpg?itok=sCpAR7It" ></a>
-                        <h3>Health + Poverty</h3>
-                          <p>The American Community Survey 5-Year Sample</p>
-                         <iframe src="http://natviz.s3-website-us-west-2.amazonaws.com/" frameborder = "0" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="50%"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center boxer">
-                    <div class="service-box">
-                           <a href="http://www.noaa.gov"><img alt="NOAA" id="thumbnail" height="70px" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/noaa_logo_color_broadcast.jpg?itok=ltQ6eLIt" ></a>
-                        
-                        <h3>Severe Storm Events</h3>
-                        <p>Severe Weather Data Inventory</p>
-                       <iframe src="http://natviz2.s3-website-us-west-2.amazonaws.com/" marginwidth="0" frameborder = "0"  marginheight="0" scrolling="no" width="100%" height="50%"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center boxer">
-                    <div class="service-box">
-                         <a href="http://www.trade.gov"><img alt="ITA" id="thumbnail" height="70px" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/ita200x200px.jpg" ></a>
-                        <h3> Trade Growth</h3>
-                        <p>Census Foreign Trade</p>
-                      
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-        
-    
-        </div>
-    </section>
+    </section>   
     
 
-<!--Demo section-->
-       <section class="no-padding" id="portfolio2" style="background-color:#999999;color:white;">
-           <div class="container" >
-            <div class="row">
-                <div class="col-lg-12  text-center">
-                    <h2 class="section-heading" ><strong>get started with hard hitting data</strong></h2>
-                    
-                </div>
-            </div>
-           </div>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="page_cdac/index.html" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Weather
-                                </div>
-                                <div class="project-name">
-                                    <!--Use NOAA's Severe Weather Inventory to anticipate weather and climate risks around the country. Leverage the information for insurance, emergency management and urban planning.-->
-                                    Description
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="page_sandbox/index.html" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Societal Well-Being
-                                </div>
-                                <div class="project-name">
-                                     <!--Use the American Community Survey to see neighborhood dynamics and socioeconomics, characterize opportunities for business and areas of social need.--> Description
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="page_datatube/index.html" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Economy
-                                </div>
-                                <div class="project-name">
-                                    GDP, Personal Income among other measures provide a pulse on the US economy. 
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            <div class="col-lg-4 col-sm-6">
-                    <a href="page_datawins/index.html" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Digital Economy
-                                </div>
-                                <div class="project-name">
-                                    Figure out if your broadband connection is staying up to pace with what is offered in your neighborhood.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="page1/index.html" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Insight
-                                </div>
-                                <div class="project-name">
-                                    Trade Opportunity Discovery Tool
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="page1/index.html" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Insight
-                                </div>
-                                <div class="project-name">
-                                    Social Justice in an American City
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://www.esa.doc.gov/content/commerce-data-advisory-council-cdac" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Insight
-                                </div>
-                                <div class="project-name">
-                                    Combining Emerging and Traditional Data
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="page1/index.html" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Engagement
-                                </div>
-                                <div class="project-name">
-                                    Curbing Income Inequality
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="page1/index.html" class="portfolio-box">
-                        <img src="img/portfolio/test1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Visualization
-                                </div>
-                                <div class="project-name">
-                                    Social Justice in an American Cityx
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
     
-    
-  <section class="bg-primary  datacorps" id="contact" style="background-color:white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading" style="color:#002952">Commerce Data Corps</h2>
+    <!--Video Scrip-->
+    <script src="js/jquery.vide.js"></script>
 
-                    <p class="text-faded" style="color:#002952"> The Data Corps collaborates with the 12 Bureaus of the U.S. Department of Commerce and private sector partners to improve data product delivery from science to society.</p>
-                </div>
-
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                  
-                     <i class="fa fa-envelope-o fa-3x wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                     <h4><a href="mailto:data@doc.gov"><font color="#002952" font-size="130%"><strong>data@doc.gov</strong></font></a></h4>
-
-                    <div  style="align:center; display: inline-block;">
-                        <a href="http://www.commerce.gov/datacorps"><img alt="Commerce Data Corps" id="cdcthumbnail" src="img/cdc-temp-logo-v2.png" ></a>
-                        <br>
-                        <a href="http://www.ntis.gov"><img alt="NTIS" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/ntis_from_web_logo_asne.jpg?itok=LRWTcyQ3" ></a>
-                        <a href="http://www.noaa.gov"><img alt="NOAA" id="thumbnail"  src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/noaa_logo_color_broadcast.jpg?itok=ltQ6eLIt" ></a>
-                        <a href="http://www.census.gov"><img alt="CENSUS" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/census_red194.jpg?itok=sCpAR7It" ></a>
-                        <a href="http://www.bea.gov"><img alt="BEA" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/bea_blue_background_logo_rgb_ro.jpg?itok=5uhLm0UX" ></a>
-                        <a href="http://www.nist.gov"><img alt="NIST" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/nistident_fleft_300ppi.jpg?itok=LlPjLDVx" ></a>
-                        <a href="http://www.mbda.gov"><img alt="MDBA" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/mbda_logo_cmyk.jpg?itok=8eSxyuSS" ></a>
-                        <a href="http://www.uspto.gov"><img alt="PTO" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/uspto_seal_full_color.jpg" ></a>
-                        <a href="http://www.trade.gov"><img alt="ITA" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/ita200x200px.jpg" ></a>
-                        <a href="http://www.ntia.doc.gov"><img alt="NTIA" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/ntialogo-hi.jpg?itok=OG8hGNfQ" ></a>
-                        <a href="http://www.bis.doc.gov"><img alt="BIS" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/bis-logo.png?itok=k5Mp7E_H" ></a>
-                        <a href="http://www.eda.gov"><img alt="EDA" id="thumbnail" src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/eda_word_treatment_logo_300ppi.jpg?itok=udXxYsjx" ></a>
-                        <a href="http://www.esa.doc.gov"><img alt="ESA" id="thumbnail" src=" https://www.commerce.gov/sites/commerce.gov/files/styles/scale_100x100/public/media/images/branding/esa_logo_b-w.jpg?itok=OUIr_rRB" ></a>
-
-
-                    </div>
-                </div>
-
-
-            </div>
-
-            </div>
-        </div>
-    </section>
-    
+    <!--vid-->
+    <scrip>
+    </scrip>
 </body>
     
 </html>
